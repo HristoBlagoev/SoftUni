@@ -1,8 +1,8 @@
-n = int(input())
+number_of_lines = int(input())
 
 numbers = []
 
-for i in range(n):
+for i in range(number_of_lines):
     number = int(input())
     numbers.append(number)
 
@@ -27,7 +27,7 @@ elif command == 'negative':
 
 elif command == 'positive':
     for num in numbers:
-        if num > 0:
+        if num >= 0:
             filtrated_numbers.append(num)
 
 print(filtrated_numbers)

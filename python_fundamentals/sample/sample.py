@@ -1,16 +1,9 @@
-number_of_stings = int(input())
-word = input()
+factor = int(input())
+count = int(input())
 
-list_of_strings = []
-list_of_strings_plus_word = []
+list_with_numbers = []
 
-for string in range(number_of_stings):
-    current_string = input()
-    list_of_strings.append(current_string)
-for string in range(number_of_stings):
-    element =
-    if word in (string):
-        list_of_strings_plus_word.append(current_string)
+for number in range(1, count + 1):
+    list_with_numbers.append(number * factor)
 
-print(list_of_strings_plus_word)
-print(list_of_strings)
+print(list_with_numbers)
