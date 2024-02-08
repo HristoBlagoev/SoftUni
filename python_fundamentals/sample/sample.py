@@ -1,26 +1,11 @@
-price_without_taxes = 0
-price_with_taxes = 0
+employees = input().split()
+happiness_factor = int(input())
 
-while True:
-    command = input()
+employee = list(map(lambda x: int(x) * happiness_factor, employees))
 
-    if command == 'special' or command == 'regular':
-        break
-    current_price = float(command)
-    if current_price < 0:
-        print("Invalid price!")
-        continue
-    price_without_taxes += current_price
-    price_with_taxes = price_without_taxes * 1.20
-    taxes = abs(price_with_taxes - price_without_taxes)
-if command == 'special':
-    price_with_taxes = price_with_taxes * 0.90
+filtrated = list(filter(lambda x: x >= (sum(employee)) / (len(employees)), employees))
 
-if price_with_taxes > 0:
-    print(f"Congratulations you've just bought a new computer!\n"
-        f"Price without taxes: {price_without_taxes:.2f}$\n"
-        f"Taxes: {taxes:.2f}$\n-----------\n"
-        f"Total price: {price_with_taxes:.2f}$")
+if len(filtrated) >= len(employees) / 2:
+    print(f"Score: {len(filtrated)}/{len(employees)}. Employees are happy!")
 else:
-    print('Invalid order!')
-
+    print(f"Score: {len(filtrated)}/{len(employees)}. Employees are not happy!")
