@@ -1,11 +1,9 @@
-employees = input().split()
-happiness_factor = int(input())
+given_numbers = list(map(float, input().split(" ")))
+rounded_numbers = []
 
-employee = list(map(lambda x: int(x) * happiness_factor, employees))
+for number in given_numbers:
+    rounded_numbers.append(round(number))
 
-filtrated = list(filter(lambda x: x >= (sum(employee)) / (len(employees)), employees))
 
-if len(filtrated) >= len(employees) / 2:
-    print(f"Score: {len(filtrated)}/{len(employees)}. Employees are happy!")
-else:
-    print(f"Score: {len(filtrated)}/{len(employees)}. Employees are not happy!")
+print(rounded_numbers)
+
