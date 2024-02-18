@@ -1,10 +1,9 @@
-list_input = input().split(", ")
-new_list = []
-for i in list_input:
-    if int(i) == 0:
-        list_input.remove(i)
-        list_input.append(i)
-for i in list_input:
-    new_list.append(int(i))
+user_name = input()
+user_password = input()
 
-print(new_list)
+password = input()
+
+while password != user_password:
+    password = input()
+
+print(f"Welcome {user_name}!")

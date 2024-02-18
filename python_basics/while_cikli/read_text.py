@@ -5,10 +5,10 @@ while name != 'Stop':
     name = input()
 
 
-while True:
-    name_2 = input()
-
-    if name_2 == 'Stop':
-        break
-
-    print(name_2)
+# while True:
+#     name_2 = input()
+#
+#     if name_2 == 'Stop':
+#         break
+#
+#     print(name_2)

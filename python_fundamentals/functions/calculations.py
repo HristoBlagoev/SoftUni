@@ -17,7 +17,7 @@ def subtract(number_1, number_2):
 operator = input()
 first_number = int(input())
 second_number = int(input())
-
+result = ''
 if operator == "multiply":
     result = multiply(first_number, second_number)
 elif operator == 'divide':

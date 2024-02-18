@@ -14,7 +14,7 @@ while True:
     price_with_taxes = price_without_taxes * 1.20
     taxes = abs(price_with_taxes - price_without_taxes)
 if command == 'special':
-    price_with_taxes = price_with_taxes * 0.90
+    price_with_taxes *= 0.90
 
 if price_with_taxes > 0:
     print(f"Congratulations you've just bought a new computer!\n"
