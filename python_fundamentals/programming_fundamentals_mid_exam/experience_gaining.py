@@ -10,7 +10,7 @@ for battle in range(1, number_of_battles + 1):
     battles_counter += 1
     experience_counter += current_battle
     if battles_counter % 3 == 0:
-        experience_counter +=  + current_battle * 0.15
+        experience_counter += current_battle * 0.15
 
     if battles_counter % 5 == 0:
         experience_counter -= current_battle * 0.10
