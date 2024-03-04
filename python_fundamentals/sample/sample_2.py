@@ -1,9 +1,4 @@
-user_name = input()
-user_password = input()
-
-password = input()
-
-while password != user_password:
-    password = input()
-
-print(f"Welcome {user_name}!")
+original_list = [1, 2, 3, 4, 5]
+doubled = map(lambda x: x * 2, original_list)
+result = list(doubled)
+print(result)
