@@ -18,4 +18,4 @@ while command != "Decode":
         message = message.replace(substring, replacement)
 
     command = input()
-print(f"You have a new text message: {message}")
+print(f"The decrypted message is: {message}")
